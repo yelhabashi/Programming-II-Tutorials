@@ -10,10 +10,11 @@ public class Student {
 	public int id;
 	public int term;
 	private double gpa;
-	private static int numStudents = 0;
+	private static int numStudents = 0;  // Static because it's a shared variable between all instances of this class
 	private int subjectLimit;
 	ArrayList<String> subjects = new ArrayList<String>();   // **Updated** Used to be Array of Strings - Check enroll function
 															// ArrayList is a list implementation [Data Structure]
+	
 	
 	// Class Constructor
 	Student(String name, int id) {   // We could implement some type of constraints check here too
@@ -25,7 +26,7 @@ public class Student {
 		numStudents++;
 	}
 
-	// constructor overload
+	// Constructor overload
 	Student(String name, int id, int term) {
 		this.name = name;
 		this.id = id;
