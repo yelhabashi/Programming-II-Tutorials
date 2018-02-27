@@ -23,7 +23,7 @@ public class Student {
 		this.term = 1;
 		this.gpa = 0;
 		this.subjectLimit = 6;
-		numStudents++;
+		numStudents++;			// Each time an instance of this class is created number of students increases
 	}
 
 	// Constructor overload
@@ -43,6 +43,7 @@ public class Student {
 		this.id = id;
 		this.term = term;
 		this.gpa = gpa;
+		numStudents++;
 	}
 	
 	
