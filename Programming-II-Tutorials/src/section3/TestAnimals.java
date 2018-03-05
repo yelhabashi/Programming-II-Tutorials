@@ -16,7 +16,7 @@ public class TestAnimals {
 		
 		/*  //   The ability of downcasting (Casting of superclass to subclass - where superclass is not an abstract class)
 		Animal a = new Lion("S","l");
-		System.out.println(simba.name);
+		System.out.println(simba.name);   
 		simba = (Lion) a;
 		System.out.println(a.name);
 		System.out.println(simba.name);
