@@ -1,5 +1,6 @@
 package section4;
 
+
 public abstract class Shape { // Class is abstract because we wont make an object from it
 	private String color;
 
