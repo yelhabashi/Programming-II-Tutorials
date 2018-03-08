@@ -21,10 +21,6 @@ public class Circle extends Shape {
 		 super.setArea(Math.PI * Math.pow(radius, 2)); // Math is a built-in class
 	}
 
-
-	public void ss() {
-		
-	}
 	@Override
 	public void printShapeMessage() {
 		super.printShapeMessage();

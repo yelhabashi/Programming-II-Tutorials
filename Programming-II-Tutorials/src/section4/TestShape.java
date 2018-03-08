@@ -7,8 +7,6 @@ public class TestShape {
 
 		Shape circle2 = new Circle("Red", 10); // Upcasting (Dynamic binding)
 
-		((Circle) circle2).ss();
-
 		// Polymorphic array
 		Shape[] shapesArray = new Shape[2];
 		shapesArray[0] = circle2;
@@ -16,7 +14,7 @@ public class TestShape {
 
 		for (Shape shape : shapesArray) {
 			shape.printShapeMessage(); // Different implementations for printShapeArea method
-			System.out.println("Shape's color : " + shape.getColor());
+			System.out.println("Shape's color: " + shape.getColor());
 			shape.calcArea();
 			System.out.println("Shape's area: " + shape.getArea() + "\n==========================");
 
