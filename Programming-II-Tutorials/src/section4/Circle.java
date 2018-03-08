@@ -1,11 +1,10 @@
 package section4;
 
-
 public class Circle extends Shape {
 	private double radius;
 
 	public Circle(String color, double radius) {
-		super.setColor(color);
+		super.setColor(color); // Setting color using setter
 		this.radius = radius;
 	}
 
@@ -18,19 +17,18 @@ public class Circle extends Shape {
 	}
 
 	@Override
-	public void printShapeArea() {
-		System.out.println("Circle's Area : " + (Math.PI * Math.pow(radius, 2))); // Math is a built-in class
+	public void calcArea() {
+		 super.setArea(Math.PI * Math.pow(radius, 2)); // Math is a built-in class
 	}
 
-	// Overloading the previous method by changing the arguments
-	public void printShapeArea(double radius) {
-		setRadius(radius);
-		System.out.println("Circle's Area : " + (Math.PI * Math.pow(radius, 2)));
-	}
 
+	public void ss() {
+		
+	}
 	@Override
 	public void printShapeMessage() {
-		System.out.println("Circle");
+		super.printShapeMessage();
+		System.out.println("circle");
 	}
 
 }

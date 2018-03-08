@@ -1,12 +1,11 @@
 package section4;
 
-
 public class Rectangle extends Shape {
 	private double length;
 	private double width;
 
 	public Rectangle(String color, double length, double width) {
-		super.setColor(color);
+		super.setColor(color); // Setting color using setter
 		this.length = length;
 		this.width = width;
 	}
@@ -28,13 +27,13 @@ public class Rectangle extends Shape {
 	}
 
 	@Override
-	public void printShapeArea() {
-		System.out.println("Rectangle's area : " + (length * width));
-
+	public void calcArea() {
+		super.setArea(length * width);
 	}
 
 	@Override
 	public void printShapeMessage() {
-		System.out.println("Rectangle");
+		super.printShapeMessage();
+		System.out.println("rectangle");
 	}
 }
