@@ -2,6 +2,7 @@ package section4;
 
 public class Circle extends Shape {
 	private double radius;
+	
 
 	public Circle(String color, double radius) {
 		super.setColor(color); // Setting color using setter

@@ -12,6 +12,7 @@ public class TestShape {
 		shapesArray[0] = circle2;
 		shapesArray[1] = new Rectangle("Blue", 10, 10);
 
+
 		for (Shape shape : shapesArray) {
 			shape.printShapeMessage(); // Different implementations for printShapeArea method
 			System.out.println("Shape's color: " + shape.getColor());
